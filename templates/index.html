@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College FAQ Chatbot</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+
+    <div class="header">
+
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTj9_jfZMHE_ZPxYs9edbM38_gW7mUrcwOkrpZXVTFMXw&s" class="logo">
+
+        <h1>🎓 Welcome to Our Website</h1>
+
+        <h2>VEMU Institute of Technology</h2>
+
+        <p><b>Email:</b> info@vemu.org</p>
+        <p><b>Phone:</b> +91 62819 14053</p>
+        <p><b>Website:</b> www.vemu.org</p>
+
+    </div>
+
+    <hr>
+
+    <div id="chat-box">
+    <p><b>🤖 College Assistant:</b> Welcome to VEMU Institute of Technology!</p>
+    <p><b>🤖 College Assistant:</b> I can help you with:</p>
+    <ul>
+        <li>📘 Admissions</li>
+        <li>💰 Fee Details</li>
+        <li>🏠 Hostel Information</li>
+        <li>💼 Placements</li>
+        <li>📚 Courses Offered</li>
+        <li>📞 Contact Information</li>
+    </ul>
+    <p><b>🤖 College Assistant:</b> Please type your question below.</p>
+</div>
+
+    <div class="input-area">
+        <input type="text" id="user-input" placeholder="Ask about admission, fees, placements...">
+        <button onclick="sendMessage()">Send</button>
+    </div>
+
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
